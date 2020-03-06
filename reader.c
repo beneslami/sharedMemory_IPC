@@ -13,5 +13,6 @@ int main(int argc, char **argv){
     return 0;
   }
   printf("Data = %s\n", (char *)read_buffer);
+  shm_unlink(key);
   return 0;
 }
