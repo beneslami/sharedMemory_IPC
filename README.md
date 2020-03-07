@@ -17,6 +17,7 @@ int munmap(void* addr, size_t length);
 addr is the address in process virtual address space. It does not destroy the shared memory but only destroy the mapping between the shared memory in the kernel space and virtual memory of the process.
 
 int shm_unlink(const char* name);
+
 It de-associate shared memory with its name. it is equivalent to like no shared memory with the same name exists.
 ---------------
 writer.c: responsible for creating and adding contents to the SHM (Publisher)
